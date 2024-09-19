@@ -1,0 +1,114 @@
+
+body {
+  font: normal 100% montserrat;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#profile {
+  float: left;
+  width: 45%;
+ 
+}
+#profiledetails{
+  padding: 20px 0 20px 20%;
+  background-color: seagreen;
+  border-radius: 10px 30px 60px 120px;
+}
+#profiledetails h3{
+  margin-bottom: 0;
+}
+#profiledetails p{
+  font-size: 1.3em;
+  margin: 0;
+}
+
+#profile img {
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#bilalinfo {
+  float: right;
+  width: 45%;
+}
+
+#bilalinfo h1 {
+  margin-bottom: 0;
+  border-bottom: 3px solid seagreen;
+}
+#bilalinfo #prof{
+  margin-top: 0;
+}
+#bilalinfo #name{
+  border-bottom: none;
+}
+ #bilalinfo p{
+  margin-bottom: 10px;
+  margin-left: 2%;
+ }
+
+#experience, #education, #certification {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#experience > div,
+#education > div,
+#certification > div {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.l {
+  float: left;
+  font-weight: bold;
+}
+#bilalinfo span{
+  font-weight: bold;
+}
+.r {
+  float: right;
+  margin-right: 2%;
+}
+
+#hobbies ul {
+  padding: 0;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 858px) {
+  .main {
+    flex-direction: column;
+  }
+
+  #profile,
+  #bilalinfo {
+    width: 100%;
+    float: none;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  #profiledetails{
+   margin: 0 auto;
+  }
+
+  #profile img {
+    margin-bottom: 20px;
+  }
+
+  #experience > div,
+  #education > div,
+  #certification > div {
+    width: 100%;
+  }
+}

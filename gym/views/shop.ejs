@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="/shop.css">
+  <script src="/shop.js"></script>
+</head>
+<body>
+  <div id="topper">
+  <h1 id="head">MY PROGRAMS</h1>
+  <div id="logout"><a href="/gym">Log Out</a></div>
+  <div class="body">
+    <div class="container">
+      <header>
+          <div class="shopping">
+            <img src="data:image/jpg;base64, <%= ordericon %>" alt="orderIcon" />
+              <span class="quantity">0</span>
+          </div>
+      </header>
+
+      <div class="list">
+        
+      </div>
+  </div>
+  <div class="card"> 
+      <h1>Cart </h1>
+      <div class="total">0</div>
+      <ul class="listCard">
+      </ul>
+      <div class="checkOut">
+        <div class="placeorder"> Check Out</div>
+          <div class="closeShopping">Close</div>
+      </div>
+  </div>
+  </div>
+</div>
+  <div id="programs">
+    <% items.forEach((item) => { %>
+   <section class="dish">
+    <h2><%= item.name %></h2>
+    <p class="photo"><img src="data:image/jpg;base64, <%= item.photo %>" alt="<%=item.name %>" /> </p>
+      <p class="info"><%= item.info %></p>
+      <p class="price"> Ksh <%= item.price %> <br>Add to cart</p>
+      </section>
+      <% }); %>
+    </div>
+    <div id="thankYouModal">
+      <span class="close">&times;</span>
+      <div id="thankYouContent">
+        <h2>Thank You!</h2>
+        <p id="thankspara">Your request has been received and we are working on it. You will receive a response via Email soon.</p>
+        <div id="progressBarContainer">
+          <div id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

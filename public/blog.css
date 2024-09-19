@@ -1,0 +1,77 @@
+
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Article Styles */
+        article {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 858px) {
+            article {
+                padding: 15px;
+            }
+        }
+
+        /* Beginner Styles */
+        #beginner {
+            background-color: #dff0d8;
+        }
+
+        /* Intermediate Styles */
+        #intermediate {
+            background-color: #d9edf7;
+        }
+
+        /* Advanced Styles */
+        #advanced {
+            background-color: #f2dede;
+        }
+
+  
+
+        
